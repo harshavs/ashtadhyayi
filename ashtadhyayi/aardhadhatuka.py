@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+from ashtadhyayi.pratyahara import वर्णाः
+from ashtadhyayi.utils import स्वरात्_मात्रा
+
 def आर्धधातुकस्येड्_वलादेः_७_२_३५(सेट्धातु, आर्धधातुक_विकरण_सेट्_प्रत्यय):
     if वल्(आर्धधातुक_विकरण_सेट्_प्रत्यय[0]):
         return सेट्धातु[:-1] + 'ि' + आर्धधातुक_विकरण_सेट्_प्रत्यय

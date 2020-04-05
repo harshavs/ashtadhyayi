@@ -32,5 +32,10 @@ def वर्णाः(प्रत्याहारः):
             continue
 
     return वर्णाः
-    
-[print(a) for a in वर्णाः('अच्')]
+
+# with open('ashtadhyayi/pratyaharas.txt') as f:
+#     pratyaharas = f.readlines()
+
+# w = open('ashtadhyayi/pratyahara_ouput.txt', 'w')
+
+# w.writelines([pratyahara[:-1] + ' '+ वर्णाः(pratyahara[:-1]) +'\n' for pratyahara in pratyaharas])
