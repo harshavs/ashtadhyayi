@@ -14,8 +14,8 @@ class TestItSamjnaPrakarana(unittest.TestCase):
     def test_शप्(self):
         self.assertEqual(इत्संज्ञाप्रकरणम्('अम्', उपदेशसंज्ञकः.प्रत्ययः, True), 'अम्')
     
-    # def test_टुक्षु(self):
-    #     self.assertEqual(इत्संज्ञाप्रकरणम्('टुक्षु'), उपदेशसंज्ञकः.धातुः, 'क्षु')
+    def test_टुक्षु(self):
+        self.assertEqual(इत्संज्ञाप्रकरणम्('टुक्षु', उपदेशसंज्ञकः.धातुः), 'क्षु')
 
     def test_डुकृञ्(self):
         self.assertEqual(इत्संज्ञाप्रकरणम्('डुकृञ्', उपदेशसंज्ञकः.धातुः), 'कृ')
