@@ -83,6 +83,16 @@ class TestLasya(unittest.TestCase):
         फलम् = [[लस्य_३_४_७७('ब्रूञ्', लकारः.लोट्, True, पुरुषः, वचनम्) for वचनम् in range(3)] for पुरुषः in range(3)]
         self.assertEqual(फलम्, प्रत्ययाः)
 
+    # revisit this later
+    # def test_लेटोऽडाटौ_३_४_९४(self):
+    #     प्रत्ययाः = [
+    #             ['तुप्', 'तस्', 'झु'],
+    #             ['हि', 'थस्', 'थ'],
+    #             ['नि', 'वस्', 'मस्']
+    #             ]
+    #     फलम् = [[लस्य_३_४_७७('ब्रूञ्', लकारः.लेट्, True, पुरुषः, वचनम्) for वचनम् in range(3)] for पुरुषः in range(3)]
+    #     self.assertEqual(फलम्, प्रत्ययाः)
+
 
 if __name__ == '__main__':
     unittest.main()
