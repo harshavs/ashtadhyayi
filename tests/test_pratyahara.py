@@ -4,6 +4,7 @@
 import unittest
 from ashtadhyayi.pratyahara import वर्णाः
 
+
 class TestPratyahara(unittest.TestCase):
     def test_प्रत्याहारः(self):
         f = open('tests/pratyahara_output.txt')
@@ -12,6 +13,7 @@ class TestPratyahara(unittest.TestCase):
             pratyahara = pratyahara.split(' ')
             self.assertEqual(वर्णाः(pratyahara[0]), pratyahara[1][:-1])
         f.close()
+
 
 if __name__ == '__main__':
     unittest.main()
