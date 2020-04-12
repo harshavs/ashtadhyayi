@@ -59,5 +59,12 @@ class TestLasya(unittest.TestCase):
         
         self.assertEqual([[लस्य_३_४_७७('ब्रूञ्', लकारः.लट्, True, पुरुषः, वचनम्) for वचनम् in range(3)] for पुरुषः in range(3)], प्रत्ययाः)
 
+    def test_लोटो_लङ्वत्_३_४_८५(self):
+        प्रत्ययाः = [['तुप्', 'तस्', 'झु'],
+                 ['हि', 'थस्', 'थ'],
+                 ['नि', 'वस्', 'मस्']
+                ]
+        self.assertEqual([[लस्य_३_४_७७('ब्रूञ्', लकारः.लोट्, True, पुरुषः, वचनम्) for वचनम् in range(3)] for पुरुषः in range(3)], प्रत्ययाः)
+
 if __name__ == '__main__':
     unittest.main()
