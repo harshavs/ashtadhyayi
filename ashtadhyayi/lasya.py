@@ -5,7 +5,8 @@ import sys
 import re
 from ashtadhyayi.pratyahara import वर्णाः
 from ashtadhyayi.it_samjna_prakarana import इत्, उपदेशसंज्ञकः, इत्संज्ञाप्रकरणम्
-from ashtadhyayi.utils import स्वरात्_मात्रा, स्वरमात्राः, मात्रायाः_स्वरः
+from ashtadhyayi.utils import स्वरात्_मात्रा
+from ashtadhyayi.sajna import आनय_टि_संज्ञाम्
 from enum import Enum
 
 
@@ -51,30 +52,6 @@ def आद्यन्तौ_टकितौ_१_१_४६(आगमः, स्
     if इत्(लकारः, उपदेशसंज्ञकः.आगमः) == 'क्':
         आगमः = इत्संज्ञाप्रकरणम्(आगमः, उपदेशसंज्ञकः.आगमः)[:-1] + '्'
         return स्थानी + आगमः
-
-
-def अचोऽन्त्यादि_टि_१_१_६४(शब्दः):
-    टि_संज्ञा = आनय_टि_संज्ञाम्()
-    हल् = वर्णाः('हल्')
-    टि = re.search(टि_संज्ञा, शब्दः)
-    if टि:
-        टि = टि.group()
-        if टि[0] in हल्:
-            length = len(टि)
-            if length > 1 and टि[1] not in हल्:
-                return मात्रायाः_स्वरः(टि[1]) + (टि[2:] if length > 2 else '')
-            else:
-                return 'अ'
-        return टि
-    return None
-
-
-def आनय_टि_संज्ञाम्():
-    अल् = वर्णाः('अल्')
-    हल् = वर्णाः('हल्')
-    मात्राः = स्वरमात्राः()
-    टि_संज्ञा = '[{अल्}][{मात्राः}]?(?!्)([{हल्}]्){{0,2}}$'.format(अल्=अल्, मात्राः=मात्राः, हल्=हल्)
-    return टि_संज्ञा
 
 
 def टित_आत्मनेपदानां_टेरे_३_४_७९(तिङ्):

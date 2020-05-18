@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from ashtadhyayi.lasya import अचोऽन्त्यादि_टि_१_१_६४, आनय_तिङ्_प्रत्ययम्, लस्य_३_४_७७, लकारः
+from ashtadhyayi.lasya import आनय_तिङ्_प्रत्ययम्, लस्य_३_४_७७, लकारः
 from ashtadhyayi.tinantarupam import तिङन्तरूपम्
 
 
@@ -22,9 +22,6 @@ class TestLasya(unittest.TestCase):
                 ['इड्', 'वहि', 'महिङ्']]
 
         self.assertEqual([[आनय_तिङ्_प्रत्ययम्(False, पुरुषः, वचनम्) for वचनम् in range(3)] for पुरुषः in range(3)], प्रत्ययाः)
-
-    def test_अचोऽन्त्यादि_टि_१_१_६४(self):
-        self.assertEqual(अचोऽन्त्यादि_टि_१_१_६४('आथाम्'), 'आम्')
 
     def test_टित_आत्मनेपदानां_टेरे_३_४_७९(self):
         प्रत्ययाः = [
