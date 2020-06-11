@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 import unittest
 from ashtadhyayi.lasya import आनय_तिङ्_प्रत्ययम्, लस्य_३_४_७७, लकारः
 from ashtadhyayi.tinantarupam import तिङन्तरूपम्

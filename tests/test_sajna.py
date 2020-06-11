@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from ashtadhyayi.sajna import हलोऽनन्तराः_संयोगः_१_१_७, अचोऽन्त्यादि_टि_१_१_६४
+from ashtadhyayi.sajna import हलोऽनन्तराः_संयोगः_१_१_७, अचोऽन्त्यादि_टि_१_१_६४, अलोऽन्त्यात्_पूर्व_उपधा_१_१_६५
 
 
 class TestSajna(unittest.TestCase):
@@ -20,6 +20,18 @@ class TestSajna(unittest.TestCase):
 
     def test_अचोऽन्त्यादि_टि_१_१_६४(self):
         self.assertEqual(अचोऽन्त्यादि_टि_१_१_६४('आथाम्'), 'आम्')
+
+    def test_अलोऽन्त्यात्_पूर्व_उपधा_१_१_६५_रामम्(self):
+        self.assertEqual(अलोऽन्त्यात्_पूर्व_उपधा_१_१_६५('रामम्'), 'अ')
+
+    def test_अलोऽन्त्यात्_पूर्व_उपधा_१_१_६५_पृच्छ्(self):
+        self.assertEqual(अलोऽन्त्यात्_पूर्व_उपधा_१_१_६५('पृच्छ्'), 'च्')
+
+    def test_अलोऽन्त्यात्_पूर्व_उपधा_१_१_६५_कृष्ण(self):
+        self.assertEqual(अलोऽन्त्यात्_पूर्व_उपधा_१_१_६५('कृष्ण'), 'ण्')
+
+    def test_अलोऽन्त्यात्_पूर्व_उपधा_१_१_६५_देवः(self):
+        self.assertEqual(अलोऽन्त्यात्_पूर्व_उपधा_१_१_६५('देवः'), 'अ')
 
 
 if __name__ == '__main__':
