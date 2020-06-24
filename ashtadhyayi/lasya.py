@@ -4,10 +4,7 @@ from ashtadhyayi.pratyahara import वर्णाः
 from ashtadhyayi.it_samjna_prakarana import इत्, उपदेशसंज्ञकः, इत्संज्ञाप्रकरणम्
 from ashtadhyayi.utils import स्वरात्_मात्रा
 from ashtadhyayi.sajna import आनय_टि_संज्ञाम्
-from enum import Enum
-
-
-लकारः = Enum('लकारः', 'लट् लिट् लुट् लृट् लेट् लोट् लङ् लिङ् लुङ् लृङ्')
+from ashtadhyayi.tinantarupam import लकारः
 
 
 def लः_परस्मैपदम्_१_४_९९():
