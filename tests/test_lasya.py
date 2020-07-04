@@ -1,6 +1,5 @@
 import unittest
-from ashtadhyayi.lasya import लस्य_३_४_७७, लकारः
-from ashtadhyayi.tinantarupam import तिङन्तरूपम्
+from ashtadhyayi.lasya import लकारः, तिङ्_प्रत्ययाः
 
 
 class TestLasya(unittest.TestCase):
@@ -12,7 +11,7 @@ class TestLasya(unittest.TestCase):
                 ['े', 'वहे', 'महे']
                 ]
         रूपम् = ('', लकारः.लट्, False)
-        फलम् = [[लस्य_३_४_७७(तिङन्तरूपम्(*रूपम्, पुरुषः, वचनम्)).तिङ्_प्रत्ययः for वचनम् in range(3)] for पुरुषः in range(3)]
+        फलम् = तिङ्_प्रत्ययाः(रूपम्)
         self.assertEqual(फलम्, प्रत्ययाः)
 
     def test_लिटस्तझयोरेशिरेच्_३_४_८१(self):
@@ -22,7 +21,7 @@ class TestLasya(unittest.TestCase):
                 ['े', 'वहे', 'महे']]
 
         रूपम् = ('', लकारः.लिट्, False)
-        फलम् = [[लस्य_३_४_७७(तिङन्तरूपम्(*रूपम्, पुरुषः, वचनम्)).तिङ्_प्रत्ययः for वचनम् in range(3)] for पुरुषः in range(3)]
+        फलम् = तिङ्_प्रत्ययाः(रूपम्)
         self.assertEqual(फलम्, प्रत्ययाः)
 
     def test_परस्मैपदानां_णलतुसुस्थलथुसणल्वमाः_३_४_८२(self):
@@ -33,7 +32,7 @@ class TestLasya(unittest.TestCase):
                 ]
 
         रूपम् = ('', लकारः.लिट्, True)
-        फलम् = [[लस्य_३_४_७७(तिङन्तरूपम्(*रूपम्, पुरुषः, वचनम्)).तिङ्_प्रत्ययः for वचनम् in range(3)] for पुरुषः in range(3)]
+        फलम् = तिङ्_प्रत्ययाः(रूपम्)
         self.assertEqual(फलम्, प्रत्ययाः)
 
     def test_विदो_लटो_वा_३_४_८३(self):
@@ -44,7 +43,7 @@ class TestLasya(unittest.TestCase):
                 ]
 
         रूपम् = ('विदँ', लकारः.लट्, True)
-        फलम् = [[लस्य_३_४_७७(तिङन्तरूपम्(*रूपम्, पुरुषः, वचनम्)).तिङ्_प्रत्ययः for वचनम् in range(3)] for पुरुषः in range(3)]
+        फलम् = तिङ्_प्रत्ययाः(रूपम्)
         self.assertEqual(फलम्, प्रत्ययाः)
 
     def test_ब्रुवः_पञ्चानामादित_आहो_ब्रुवः_३_४_८४(self):
@@ -55,7 +54,7 @@ class TestLasya(unittest.TestCase):
                 ]
 
         रूपम् = ('ब्रूञ्', लकारः.लट्, True)
-        फलम् = [[लस्य_३_४_७७(तिङन्तरूपम्(*रूपम्, पुरुषः, वचनम्)).तिङ्_प्रत्ययः for वचनम् in range(3)] for पुरुषः in range(3)]
+        फलम् = तिङ्_प्रत्ययाः(रूपम्)
         self.assertEqual(फलम्, प्रत्ययाः)
 
     def test_लोटो_लङ्वत्_३_४_८५(self):
@@ -66,7 +65,7 @@ class TestLasya(unittest.TestCase):
                 ]
 
         रूपम् = ('ब्रूञ्', लकारः.लोट्, True)
-        फलम् = [[लस्य_३_४_७७(तिङन्तरूपम्(*रूपम्, पुरुषः, वचनम्)).तिङ्_प्रत्ययः for वचनम् in range(3)] for पुरुषः in range(3)]
+        फलम् = तिङ्_प्रत्ययाः(रूपम्)
         self.assertEqual(फलम्, प्रत्ययाः)
 
     # revisit this later
