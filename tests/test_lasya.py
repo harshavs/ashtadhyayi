@@ -1,24 +1,9 @@
 import unittest
-from ashtadhyayi.lasya import आनय_तिङ्_प्रत्ययम्, लस्य_३_४_७७, लकारः
+from ashtadhyayi.lasya import लस्य_३_४_७७, लकारः
 from ashtadhyayi.tinantarupam import तिङन्तरूपम्
 
 
 class TestLasya(unittest.TestCase):
-    def test_आनय_तिङ्_प्रत्ययम्_परस्मैपदम्(self):
-        प्रत्ययाः = [
-                ['तिप्', 'तस्', 'झि'],
-                ['सिप्', 'थस्', 'थ'],
-                ['मिप्', 'वस्', 'मस्']]
-
-        self.assertEqual([[आनय_तिङ्_प्रत्ययम्(True, पुरुषः, वचनम्) for वचनम् in range(3)] for पुरुषः in range(3)], प्रत्ययाः)
-
-    def test_आनय_तिङ्_प्रत्ययम्_आत्मनेपदम्(self):
-        प्रत्ययाः = [
-                ['त', 'आताम्', 'झ'],
-                ['थास्', 'आथाम्', 'ध्वम्'],
-                ['इड्', 'वहि', 'महिङ्']]
-
-        self.assertEqual([[आनय_तिङ्_प्रत्ययम्(False, पुरुषः, वचनम्) for वचनम् in range(3)] for पुरुषः in range(3)], प्रत्ययाः)
 
     def test_टित_आत्मनेपदानां_टेरे_३_४_७९(self):
         प्रत्ययाः = [
