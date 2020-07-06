@@ -1,5 +1,6 @@
 import unittest
-from ashtadhyayi.lasya import लकारः, तिङ्_प्रत्ययाः
+from ashtadhyayi.lasya import लकारः
+from ashtadhyayi.tinantarupam import तिङ्_प्रत्ययाः
 
 
 class TestLasya(unittest.TestCase):

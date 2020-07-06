@@ -1,6 +1,7 @@
 import unittest
 from ashtadhyayi.dhaatoho import सार्वधातुकम्_आर्धधातुकम्
-from ashtadhyayi.tinantarupam import तिङन्तरूपम्, लकारः
+from ashtadhyayi.tinantarupam import तिङन्तरूपम्
+from ashtadhyayi.lasya import लकारः
 
 
 class TestDhaatoho(unittest.TestCase):
