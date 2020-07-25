@@ -1,6 +1,7 @@
 from ashtadhyayi.dhaatoho import सार्वधातुकम्_आर्धधातुकम्, धातोरेकाचो_हलादेः_क्रियासमभिहारे_यङ्_३_१_२२
+from ashtadhyayi.angasya import आर्धधातुकस्येड्_वलादेः_७_२_३५
 from ashtadhyayi.lasya import लस्य_३_४_७७
-from ashtadhyayi.aardhadhatuka import आर्धधातुकस्येड्_वलादेः_७_२_३५
+from ashtadhyayi.aardhadhatuke import आर्धधातुके_२_४_३५, आदेच_उपदेशेऽशिति_६_१_४५
 
 
 class तिङन्तरूपम्:
@@ -37,7 +38,10 @@ def इडागमविधिः(पदम्):
 
 
 def धात्वादेशः(पदम्):
-    return None
+    आर्धधातुके_२_४_३५(पदम्)
+    आदेशः = आदेच_उपदेशेऽशिति_६_१_४५(पदम्)
+    if आदेशः:
+        पदम्.धातुः['आदेशः'] = आदेशः
 
 
 def अतिदेशः_अङ्गकार्यः(पदम्):
