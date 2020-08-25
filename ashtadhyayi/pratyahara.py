@@ -40,6 +40,18 @@ def वर्णाः(प्रत्याहारः):
 def वल्(वर्ण):
     return वर्ण in वर्णाः('वल्')
 
+
+def इक्(वर्ण):
+    return वर्ण in वर्णाः('इक्')
+
+
+def हल्(वर्ण):
+    return वर्ण in वर्णाः('हल्')
+
+
+def अच्(वर्ण):
+    return वर्ण in वर्णाः('अच्')
+
 # with open('ashtadhyayi/pratyaharas.txt') as f:
 #     pratyaharas = f.readlines()
 

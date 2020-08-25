@@ -1,5 +1,5 @@
 from ashtadhyayi.dhaatoho import सार्वधातुकम्_आर्धधातुकम्, धातोरेकाचो_हलादेः_क्रियासमभिहारे_यङ्_३_१_२२
-from ashtadhyayi.angasya import आर्धधातुकस्येड्_वलादेः_७_२_३५
+from ashtadhyayi.angasya import आर्धधातुकस्येड्_वलादेः_७_२_३५, मिदेर्गुणः_७_३_८२
 from ashtadhyayi.lasya import लस्य_३_४_७७
 from ashtadhyayi.aardhadhatuke import आर्धधातुके_२_४_३५, आदेच_उपदेशेऽशिति_६_१_४५
 
@@ -45,7 +45,7 @@ def धात्वादेशः(पदम्):
 
 
 def अतिदेशः_अङ्गकार्यः(पदम्):
-    return None
+    return मिदेर्गुणः_७_३_८२(पदम्)
 
 
 def सामान्यअङ्गकार्यः(पदम्):

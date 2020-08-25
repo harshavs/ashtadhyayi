@@ -2,10 +2,20 @@
 # -*- coding: utf-8 -*-
 
 import unittest
+from ashtadhyayi.sajna import वृद्धिरादैच्_१_१_१, अदेङ्_गुणः_१_१_२, इको_गुणवृद्धी_१_१_३
 from ashtadhyayi.sajna import हलोऽनन्तराः_संयोगः_१_१_७, अचोऽन्त्यादि_टि_१_१_६४, अलोऽन्त्यात्_पूर्व_उपधा_१_१_६५
 
 
 class TestSajna(unittest.TestCase):
+    def test_वृद्धिरादैच्_१_१_१(self):
+        self.assertEqual(वृद्धिरादैच्_१_१_१(), ['आ', 'ऐ', 'औ'])
+
+    def test_अदेङ्_गुणः_१_१_२(self):
+        self.assertEqual(अदेङ्_गुणः_१_१_२(), ['अ', 'ए', 'ओ'])
+
+    def test_इको_गुणवृद्धी_१_१_३(self):
+        self.assertEqual(इको_गुणवृद्धी_१_१_३('इ'), 'ए')
+
     def test_हलोऽनन्तराः_संयोगः_१_१_७_अग्नि(self):
         self.assertEqual(हलोऽनन्तराः_संयोगः_१_१_७('अग्नि').group(), 'ग्न')
 
