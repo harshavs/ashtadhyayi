@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from ashtadhyayi.angasya import आर्धधातुकस्येड्_वलादेः_७_२_३५, मिदेर्गुणः_७_३_८२
+from ashtadhyayi.angasya import आर्धधातुकस्येड्_वलादेः_७_२_३५, मिदेर्गुणः_७_३_८२, पुगन्तलघूपधस्य_च_७_३_८६
 from ashtadhyayi.tinantarupam import तिङन्तरूपम्
 from ashtadhyayi.lasya import लकारः
 
@@ -21,6 +21,16 @@ class TestAngaasya(unittest.TestCase):
         पदम्.विकरणप्रत्ययः = {'प्रत्ययः': 'स्य', 'आर्धधातुकम्': True}
         मिदेर्गुणः_७_३_८२(पदम्)
         self.assertTrue(पदम्.धातुः['आदेशः'] == 'मेद्')
+
+    def test_पुगन्तलघूपधस्य_च_७_३_८६_व्ली(self):
+        धातुः = {'धातुः': 'व्ली', 'आगमः': 'पुक्'}
+        पदम् = तिङन्तरूपम्(धातुः, लकारः.लृट्, True, 0, 0)
+        self.assertTrue(पुगन्तलघूपधस्य_च_७_३_८६(पदम्))
+
+    def test_पुगन्तलघूपधस्य_च_७_३_८६_लिख्(self):
+        धातुः = {'धातुः': 'लिख्'}
+        पदम् = तिङन्तरूपम्(धातुः, लकारः.लृट्, True, 0, 0)
+        self.assertTrue(पुगन्तलघूपधस्य_च_७_३_८६(पदम्))
 
 
 if __name__ == '__main__':
