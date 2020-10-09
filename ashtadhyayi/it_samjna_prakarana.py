@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 from enum import Enum
 import re
 from ashtadhyayi.pratyahara import वर्णाः
