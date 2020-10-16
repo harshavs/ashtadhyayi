@@ -35,4 +35,4 @@ jobs:
       run: |
         python -m unittest discover -s tests/
     - name: Generate Sutravali
-        python ashtadhyayi/sutravali.py
+      run: python ashtadhyayi/sutravali.py
