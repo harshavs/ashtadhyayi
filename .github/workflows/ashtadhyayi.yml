@@ -36,3 +36,5 @@ jobs:
         python -m unittest discover -s tests/
     - name: Generate Sutravali
       run: python ashtadhyayi/sutravali.py
+    - name: Push generated list to master
+      uses: mikeal/publish-to-github-action@1.0.0
