@@ -54,6 +54,7 @@ def सूत्रावली():
             sankhya=sutra['sankhya'],
             sutra=sutra['sutra'])
     list += '</ul></li></ul></li></ul>'
+    list += '<br/><div> Count - {count}'.format(count=len(sutras))
 
     open('docs/sutravali.html', 'w+').write(list)
 
