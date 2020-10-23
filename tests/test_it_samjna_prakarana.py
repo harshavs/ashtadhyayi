@@ -11,7 +11,7 @@ class TestItSamjnaPrakarana(unittest.TestCase):
         self.assertEqual(इत्संज्ञाप्रकरणम्('गम्ऌँ', उपदेशसंज्ञकः.धातुः), 'ग')
 
     def test_शप्(self):
-        self.assertEqual(इत्संज्ञाप्रकरणम्('शप्'), 'श')
+        self.assertEqual(इत्संज्ञाप्रकरणम्('शप्'), 'अ')
 
     def test_अम्(self):
         self.assertEqual(इत्संज्ञाप्रकरणम्('अम्', उपदेशसंज्ञकः.प्रत्ययः, True), 'अम्')
@@ -30,6 +30,12 @@ class TestItSamjnaPrakarana(unittest.TestCase):
 
     def test_ल्युट्(self):
         self.assertEqual(इत्संज्ञाप्रकरणम्('ल्युट्', उपदेशसंज्ञकः.प्रत्ययः), 'यु')
+
+    def test_झ(self):
+        self.assertEqual(इत्संज्ञाप्रकरणम्('झ', उपदेशसंज्ञकः.प्रत्ययः), 'अ')
+
+    def test_णल्(self):
+        self.assertEqual(इत्संज्ञाप्रकरणम्('णल्', उपदेशसंज्ञकः.प्रत्ययः), 'अ')
 
 
 if __name__ == '__main__':

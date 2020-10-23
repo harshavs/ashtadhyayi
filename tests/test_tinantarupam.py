@@ -18,6 +18,12 @@ class TestTinantarupam(unittest.TestCase):
         धात्वादेशः(पदम्)
         self.assertEqual(पदम्.धातुः['आदेशः'], 'ग्ला')
 
+    def test_कुर्दँ(self):
+        धातुः = {'उपदेशः': 'कुर्दँ', 'गणः': 'भ्वादिः', 'सेट्': True}
+        पदम् = तिङन्तम्(धातुः, लकारः.लृट्, True, 0, 0)
+        पदम्.विकरणप्रत्ययः = {'प्रत्ययः': 'सिप्', 'आर्धधातुकम्': True}
+        self.assertEqual(पदम्.धातुः['धातुः'], 'कूर्द्')
+
     def test_कृ(self):
         results = {}
         padis = [True, False]

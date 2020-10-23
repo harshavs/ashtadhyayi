@@ -7,6 +7,11 @@ import re
 from ashtadhyayi.aakadaaraat_ekaa_sajna import लघु_वा
 
 
+def इदितो_नुम्_धातोः_७_१_५८(पदम्):
+    if पदम्.धातुः['इत्'] == 'इँ':
+        पदम्.धातुः['आगमः'] = 'नुम्'
+
+
 def नेड्_वशि_कृति_७_२_८(पदम्):
     # TODO
     return None
