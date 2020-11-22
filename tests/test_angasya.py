@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 import unittest
 from ashtadhyayi.angasya import आर्धधातुकस्येड्_वलादेः_७_२_३५, मिदेर्गुणः_७_३_८२, पुगन्तलघूपधस्य_च_७_३_८६
 from ashtadhyayi.tinantarupam import तिङन्तरूपम्

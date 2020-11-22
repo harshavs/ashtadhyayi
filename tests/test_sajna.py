@@ -4,7 +4,7 @@
 import unittest
 from ashtadhyayi.sajna import वृद्धिरादैच्_१_१_१, अदेङ्_गुणः_१_१_२, इको_गुणवृद्धी_१_१_३
 from ashtadhyayi.sajna import हलोऽनन्तराः_संयोगः_१_१_७, अचोऽन्त्यादि_टि_१_१_६४, अलोऽन्त्यात्_पूर्व_उपधा_१_१_६५
-from ashtadhyayi.sajna import मिदचोऽन्त्यात्परः_१_१_४७
+from ashtadhyayi.sajna import मिदचोऽन्त्यात्परः_१_१_४७, स्वरितञितः_कर्त्रभिप्राये_क्रियाफले_१_३_७२
 
 
 class TestSajna(unittest.TestCase):
@@ -49,6 +49,12 @@ class TestSajna(unittest.TestCase):
 
     def test_मिदचोऽन्त्यात्परः_१_१_४७_मुच्(self):
         self.assertEqual(मिदचोऽन्त्यात्परः_१_१_४७('म्', 'न्', 'मुच्'), ('मु', 'न्', 'च्'))
+
+    def test_स्वरितञितः_कर्त्रभिप्राये_क्रियाफले_१_३_७२(self):
+        self.assertTrue(स्वरितञितः_कर्त्रभिप्राये_क्रियाफले_१_३_७२(['ञ्']))
+
+    def test_स्वरितञितः_कर्त्रभिप्राये_क्रियाफले_१_३_७२_र॑सँ॑(self):
+        self.assertTrue(स्वरितञितः_कर्त्रभिप्राये_क्रियाफले_१_३_७२(['र॑सँ॑']))
 
 
 if __name__ == '__main__':
