@@ -39,6 +39,7 @@ class TestTinantarupam(unittest.TestCase):
     def test_कृ(self):
         results = {}
         padis = [True, False]
+        # with open('tests/dhaatupaatha.txt') as dhaatupatha:
         धातुः = {'उपदेशः': 'डुकृ॒ञ्', 'गणः': 'तनादिः'}
         purushas = ['प्रथमपुरुषः', 'मध्यमपुरुषः', 'उत्तमपुरुषः']
         vachanas = ['एकवचनम्', 'द्विवचनम्', 'बहुवचनम्']

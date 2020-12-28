@@ -39,8 +39,8 @@ class TestDhaatupatha(unittest.TestCase):
         #             else:
         #                 raise AssertionError()
 
-        #             if स्वरितञितः_कर्त्रभिप्राये_क्रियाफले_१_३_७२(dhaatu[9]['इत्']
-        # or सत्यापपाशरूपवीणातूलश्लोकसेनालोमत्वचवर्मवर्णचूर्णचुरादिभ्यो_णिच्_३_१_२५(dhaatu[1]):
+        #             if स्वरितञितः_कर्त्रभिप्राये_क्रियाफले_१_३_७२(dhaatu[9]['इत्'])
+        #             or सत्यापपाशरूपवीणातूलश्लोकसेनालोमत्वचवर्मवर्णचूर्णचुरादिभ्यो_णिच्_३_१_२५(dhaatu[1]):
         #                 if dhaatu[5] == 'उ.प':
         #                     ucount += 1
         #                 else:
@@ -68,7 +68,7 @@ class TestDhaatupatha(unittest.TestCase):
         #             upadesa = upadesa.replace(स्वरित, '')
 
         #             if upadesa != dhaatu[2][1]:
-        #                 ds.append(dhaatu)
+        #                 ds.apgitpend(dhaatu)
         #     print("ubhayapadi"+str(ucount))
         #     print("aatmanepadi"+str(acount))
         #     print(f"ap:{str(ap)}:up:{str(up)}:pp:{str(pp)}")
