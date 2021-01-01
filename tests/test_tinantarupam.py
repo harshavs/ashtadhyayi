@@ -43,10 +43,10 @@ class TestTinantarupam(unittest.TestCase):
         errors = []
         with open('tests/dhaatupaatha.txt') as dhaatupatha:
             for dhaatu in dhaatupatha:
-                #print(count)
+                # print(count)
                 count += 1
                 # Skip first two lines
-                if count > 2:
+                if count > 2 and count < 10:
                     dhaatu = dhaatu.split(',')
                     dhaatu[8] = dhaatu[8].replace('\n', '')
                     upadesha = dhaatu[2].replace(' ', '')
