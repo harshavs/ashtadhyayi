@@ -1,10 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from ashtadhyayi.pratyahara import वल्, वर्णाः
-from ashtadhyayi.utils import स्वरात्_मात्रा, मात्रायाः_स्वरः, दीर्घाः, ह्रस्वः
+from ashtadhyayi.utils import स्वरात्_मात्रा, मात्रायाः_स्वरः, दीर्घाः, ह्रस्वः, दीर्घः
 from ashtadhyayi.sajna import इको_गुणवृद्धी_१_१_३, अलोऽन्त्यात्_पूर्व_उपधा_१_१_६५
 import re
 from ashtadhyayi.aakadaaraat_ekaa_sajna import लघु_वा
+
+
+def अङ्गस्य_६_४_१(पदम्):
+    हलः_६_४_२(पदम्)
+
+
+def हलः_६_४_२(पदम्):
+    सम्प्रसारणम् = पदम्.धातुः['सम्प्रसारणम्']
+    if सम्प्रसारणम्:
+        पदम्.धातुः['सम्प्रसारणम्'] = दीर्घः(सम्प्रसारणम्)
 
 
 def झोऽन्तः_७_१_३(पदम्):
