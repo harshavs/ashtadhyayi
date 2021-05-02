@@ -36,6 +36,11 @@ class TestTinantarupam(unittest.TestCase):
         पदम्.विकरणप्रत्ययः = {'प्रत्ययः': 'सिप्', 'आर्धधातुकम्': True}
         self.assertEqual(पदम्.धातुः['धातुः'], 'स्टुच्')
 
+    # def test_बभूव(self):
+    #     धातुः = {'उपदेशः': 'भू', 'गणः': 'भ्वादिः', 'सेट्': True}
+    #     पदम् = तिङन्तम्(धातुः, लकारः.लिट्, True, 0, 0)
+    #     self.assertEqual(पदम्.तिङन्तरूपम्, 'बभूव')
+
     # TODO: separate file
     def test_धातुरूपम्(self):
         count = 0
